@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor-principal: #fff;
+    --cor-secundario: #c0c0c0;
+    --cor-botao: #167db7;
+    --cor-fundo: #00030c;
+
+    --fonte-principal: 'Inter';
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.principal {
+    background-image: url("./assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__botao{
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--cor-principal);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.container__botao.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);
+}
+.container__aviso {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--cor-secundario);
+}
+.container__titulo {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+.container__caixa {
+    margin: 0 6em;
+}
+
+
+
+.secundario__imagem {
+    width: 80%;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.1em;
+}
+.descricao__texto {
+    color: var(--cor-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.dispositivos__lista {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 5em 0;
+}
+.dispositivos__titulo {
+    font-size: 3rem;
+    color: var(--cor-principal);
+}
+.lista__item {
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+.rodape {
+    text-align: center;
+}
+.rodape__lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 2em 5em;
+}
+.lista__link a{
+    text-decoration: none;
+    color: var(--cor-secundario);
+}
+
+.rodape__texto {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--cor-secundario);
+    margin: 0 5em;
+}
+.rodape__container {
+    margin-bottom: 5em;
+}
+.lista__link a:hover {
+    color: var(--cor-botao);
+}
